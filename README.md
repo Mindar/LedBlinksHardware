@@ -1,2 +1,2 @@
-# LedBlinksHardware
-Wifi controlled driver for non-addressable led strips.
+# LedBlinks
+LedBlinks is a wifi configurable controller/driver for up to 3 independent channels. Most notably it can be used to control RGB LED strips over wifi. But you can control any other load, for example three independent white led strips or just 3 single leds.

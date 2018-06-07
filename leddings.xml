@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/alex/Projects/leddings/leddings.sch</source>
+    <date>Do 07 Jun 2018 18:43:18 CEST</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>leddings.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power Supply/" tstamps="/5B156FC6/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/LED Driver/" tstamps="/5B157B35/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>driver.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/USB UART Interface/" tstamps="/5B191627/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>uart.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Controller/" tstamps="/5B192D20/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>smarts.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>D</value>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/Power Supply/" tstamps="/5B156FC6/"/>
+      <tstamp>5B1573F2</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Barrel_Jack</value>
+      <libsource lib="conn" part="Barrel_Jack"/>
+      <sheetpath names="/Power Supply/" tstamps="/5B156FC6/"/>
+      <tstamp>5B1577C1</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM1117-3.3</value>
+      <footprint>TO_SOT_Packages_THT:TO-220-3_Vertical</footprint>
+      <libsource lib="regul" part="LM1117-3.3"/>
+      <sheetpath names="/Power Supply/" tstamps="/5B156FC6/"/>
+      <tstamp>5B194466</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power Supply/" tstamps="/5B156FC6/"/>
+      <tstamp>5B157419</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power Supply/" tstamps="/5B156FC6/"/>
+      <tstamp>5B19450F</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>FQP30N06L</value>
+      <libsource lib="device" part="Q_NMOS_GDS"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B157B68</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B157EE6</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B157F0E</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04</value>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B158040</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>FQP30N06L</value>
+      <libsource lib="device" part="Q_NMOS_GDS"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B1583C2</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>100R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B1583C8</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B1583CE</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>FQP30N06L</value>
+      <libsource lib="device" part="Q_NMOS_GDS"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B158B44</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>100R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B158B4A</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/LED Driver/" tstamps="/5B157B35/"/>
+      <tstamp>5B158B50</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>CH340G</value>
+      <libsource lib="ch34x" part="CH340G"/>
+      <sheetpath names="/USB UART Interface/" tstamps="/5B191627/"/>
+      <tstamp>5B191996</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Micro USB</value>
+      <libsource lib="conn" part="USB_A"/>
+      <sheetpath names="/USB UART Interface/" tstamps="/5B191627/"/>
+      <tstamp>5B19199D</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>12 Mhz Crystal</value>
+      <libsource lib="device" part="Crystal"/>
+      <sheetpath names="/USB UART Interface/" tstamps="/5B191627/"/>
+      <tstamp>5B1919D2</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>22pF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/USB UART Interface/" tstamps="/5B191627/"/>
+      <tstamp>5B1919D9</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>22pF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/USB UART Interface/" tstamps="/5B191627/"/>
+      <tstamp>5B1919E0</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>ESP-07v2</value>
+      <libsource lib="ESP8266" part="ESP-07v2"/>
+      <sheetpath names="/Controller/" tstamps="/5B192D20/"/>
+      <tstamp>5B193085</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_RESET</value>
+      <libsource lib="switches" part="SW_Push"/>
+      <sheetpath names="/Controller/" tstamps="/5B192D20/"/>
+      <tstamp>5B19308C</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Controller/" tstamps="/5B192D20/"/>
+      <tstamp>5B193093</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>Boot SEL</value>
+      <footprint>Connectors:GS3</footprint>
+      <libsource lib="conn" part="GS3"/>
+      <sheetpath names="/Controller/" tstamps="/5B192D20/"/>
+      <tstamp>5B1930B8</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Controller/" tstamps="/5B192D20/"/>
+      <tstamp>5B1930D4</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="Barrel_Jack">
+      <aliases>
+        <alias>Jack-DC</alias>
+      </aliases>
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ch34x" part="CH340G">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CH340G</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="TX" type="output"/>
+        <pin num="3" name="RX" type="input"/>
+        <pin num="4" name="V3" type="power_in"/>
+        <pin num="5" name="D+" type="BiDi"/>
+        <pin num="6" name="D-" type="BiDi"/>
+        <pin num="7" name="XI" type="input"/>
+        <pin num="8" name="XO" type="input"/>
+        <pin num="9" name="CTS" type="output"/>
+        <pin num="10" name="DSR" type="output"/>
+        <pin num="11" name="RI" type="output"/>
+        <pin num="12" name="DCD" type="output"/>
+        <pin num="13" name="DTR" type="output"/>
+        <pin num="14" name="RTS" type="output"/>
+        <pin num="15" name="RS232" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Crystal">
+      <description>Two pin crystal</description>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP8266" part="ESP-12">
+      <aliases>
+        <alias>ESP-07v2</alias>
+        <alias>ESP-07S</alias>
+      </aliases>
+      <description>ESP8266 ESP-12 module, 16 pins, 2mm, PCB antenna</description>
+      <docs>http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/</docs>
+      <footprints>
+        <fp>ESP-07*</fp>
+        <fp>ESP-12*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="REST" type="input"/>
+        <pin num="2" name="ADC" type="passive"/>
+        <pin num="3" name="CH_PD" type="input"/>
+        <pin num="4" name="GPIO16" type="BiDi"/>
+        <pin num="5" name="GPIO14" type="BiDi"/>
+        <pin num="6" name="GPIO12" type="BiDi"/>
+        <pin num="7" name="GPIO13" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="GPIO15" type="BiDi"/>
+        <pin num="11" name="GPIO2" type="BiDi"/>
+        <pin num="12" name="GPIO0" type="BiDi"/>
+        <pin num="13" name="GPIO4" type="BiDi"/>
+        <pin num="14" name="GPIO5" type="BiDi"/>
+        <pin num="15" name="RXD" type="input"/>
+        <pin num="16" name="TXD" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="GS3">
+      <description>3-pin jumper/solder bridge</description>
+      <footprints>
+        <fp>GS*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">GS3</field>
+        <field name="Footprint">Connectors:GS3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G1" type="passive"/>
+        <pin num="2" name="G2" type="passive"/>
+        <pin num="3" name="G3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="regul" part="LM1117-1.8">
+      <aliases>
+        <alias>LM1117-2.5</alias>
+        <alias>LM1117-3.3</alias>
+        <alias>LM1117-5.0</alias>
+        <alias>TLV1117-15</alias>
+        <alias>TLV1117-18</alias>
+        <alias>TLV1117-25</alias>
+        <alias>TLV1117-33</alias>
+        <alias>TLV1117-50</alias>
+      </aliases>
+      <description>800mA Low-Dropout Linear Regulator, 1.8V fixed output, TO-220/TO-252/TO-263/SOT-223</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+        <fp>TO?263*</fp>
+        <fp>TO?252*</fp>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM1117-1.8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_NMOS_GDS">
+      <description>Transistor N-MOSFET with substrate diode (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="switches" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_A">
+      <description>USB Type A connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="switches">
+      <uri>/usr/share/kicad/library/switches.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="regul">
+      <uri>/usr/share/kicad/library/regul.lib</uri>
+    </library>
+    <library logical="ESP8266">
+      <uri>/home/alex/kicad/libraries/kicad-ESP8266/ESP8266.lib</uri>
+    </library>
+    <library logical="ch34x">
+      <uri>/home/alex/kicad/libraries/kicad-ch34x/ch34x.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Controller/GREEN">
+      <node ref="U3" pin="6"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="2" name="/Controller/RED">
+      <node ref="R1" pin="2"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="3" name="/Controller/BOOT_SELECT">
+      <node ref="SW2" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U3" pin="12"/>
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="4" name="/Controller/RESET">
+      <node ref="SW1" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="5" name="/USB UART Interface/RX">
+      <node ref="U2" pin="3"/>
+      <node ref="U3" pin="16"/>
+    </net>
+    <net code="6" name="/Controller/RX">
+      <node ref="U3" pin="15"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="7" name="/Controller/BLUE">
+      <node ref="U3" pin="7"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="8" name="+12V">
+      <node ref="U1" pin="3"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="9" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="J3" pin="5"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="U1" pin="1"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="R5" pin="2"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="U3" pin="9"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="10" name="VBUS">
+      <node ref="J3" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="11" name="VCC">
+      <node ref="R8" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="SW2" pin="3"/>
+      <node ref="R7" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="16"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="12" name="/LED Driver/BlueChannel">
+      <node ref="Q3" pin="2"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="13" name="/LED Driver/GreenChannel">
+      <node ref="J2" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="14" name="Net-(Q2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="15" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="16" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="17" name="/LED Driver/RedChannel">
+      <node ref="Q1" pin="2"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="18" name="Net-(C4-Pad1)">
+      <node ref="U2" pin="8"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="19" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1"/>
+      <node ref="U2" pin="7"/>
+      <node ref="Y1" pin="1"/>
+    </net>
+    <net code="20" name="Net-(U2-Pad12)">
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="21" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="22" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="23" name="Net-(U2-Pad11)">
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="24" name="Net-(U2-Pad15)">
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="25" name="Net-(J3-Pad2)">
+      <node ref="U2" pin="6"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="26" name="Net-(J3-Pad3)">
+      <node ref="U2" pin="5"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="27" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="28" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="29" name="Net-(U3-Pad14)">
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="30" name="Net-(U3-Pad10)">
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="31" name="Net-(U3-Pad11)">
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="32" name="Net-(U3-Pad13)">
+      <node ref="U3" pin="13"/>
+    </net>
+  </nets>
+</export>
