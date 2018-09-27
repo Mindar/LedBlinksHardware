@@ -167,9 +167,9 @@ Wire Wire Line
 	6150 3950 6050 3950
 Text HLabel 4150 4250 0    60   Input ~ 0
 RED
-Text HLabel 4150 4350 0    60   Input ~ 0
-GREEN
 Text HLabel 4150 4450 0    60   Input ~ 0
+GREEN
+Text HLabel 4150 4350 0    60   Input ~ 0
 BLUE
 NoConn ~ 4250 4150
 Wire Wire Line
@@ -215,10 +215,10 @@ NoConn ~ 5100 5050
 NoConn ~ 5000 5050
 NoConn ~ 4900 5050
 $Comp
-L power1:GND #PWR?
+L power1:GND #PWR0101
 U 1 1 5B50A811
 P 6200 4550
-F 0 "#PWR?" H 6200 4300 50  0001 C CNN
+F 0 "#PWR0101" H 6200 4300 50  0001 C CNN
 F 1 "GND" V 6205 4422 50  0000 R CNN
 F 2 "" H 6200 4550 50  0001 C CNN
 F 3 "" H 6200 4550 50  0001 C CNN
