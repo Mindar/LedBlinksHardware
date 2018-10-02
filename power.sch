@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
-Title ""
-Date ""
-Rev ""
+Title "LED Driver"
+Date "2018-10-02"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -76,12 +76,12 @@ Wire Wire Line
 $Comp
 L power1:VCC #PWR04
 U 1 1 5B157413
-P 8250 3700
-F 0 "#PWR04" H 8250 3550 50  0001 C CNN
-F 1 "VCC" H 8250 3850 50  0000 C CNN
-F 2 "" H 8250 3700 50  0001 C CNN
-F 3 "" H 8250 3700 50  0001 C CNN
-	1    8250 3700
+P 9500 3700
+F 0 "#PWR04" H 9500 3550 50  0001 C CNN
+F 1 "VCC" H 9500 3850 50  0000 C CNN
+F 2 "" H 9500 3700 50  0001 C CNN
+F 3 "" H 9500 3700 50  0001 C CNN
+	1    9500 3700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -172,7 +172,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3700 6200 3800
 Wire Wire Line
-	7850 3700 8250 3700
+	7850 3700 8850 3700
 Wire Wire Line
 	3000 3550 3150 3550
 Wire Wire Line
@@ -223,4 +223,38 @@ F 3 "" H 7800 1050 50  0001 C CNN
 	1    7800 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:LED D2
+U 1 1 5BB3B41C
+P 8850 4350
+F 0 "D2" V 8888 4233 50  0000 R CNN
+F 1 "LED" V 8797 4233 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 8850 4350 50  0001 C CNN
+F 3 "~" H 8850 4350 50  0001 C CNN
+	1    8850 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5BB3B508
+P 8850 3950
+F 0 "R9" H 8920 3996 50  0000 L CNN
+F 1 "1K" H 8920 3905 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8780 3950 50  0001 C CNN
+F 3 "~" H 8850 3950 50  0001 C CNN
+	1    8850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3800 8850 3700
+Connection ~ 8850 3700
+Wire Wire Line
+	8850 3700 9500 3700
+Wire Wire Line
+	8850 4200 8850 4100
+Wire Wire Line
+	7850 4550 8850 4550
+Wire Wire Line
+	8850 4550 8850 4500
+Connection ~ 7850 4550
 $EndSCHEMATC

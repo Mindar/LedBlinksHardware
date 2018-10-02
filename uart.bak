@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
-Title ""
-Date ""
-Rev ""
+Title "LED Driver"
+Date "2018-10-02"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -170,14 +170,14 @@ Wire Wire Line
 	5800 3100 5800 3500
 Wire Wire Line
 	5800 3500 6300 3500
-Text HLabel 7350 3600 2    60   Input ~ 0
+Text HLabel 8500 3600 2    60   Input ~ 0
 DTR
-Text HLabel 7350 3500 2    60   Input ~ 0
+Text HLabel 8500 3500 2    60   Input ~ 0
 RTS
 Wire Wire Line
-	7200 3500 7350 3500
+	7200 3500 7450 3500
 Wire Wire Line
-	7350 3600 7200 3600
+	8500 3600 7550 3600
 NoConn ~ 7200 3400
 NoConn ~ 7200 3700
 NoConn ~ 7200 3800
@@ -186,18 +186,18 @@ NoConn ~ 7200 4000
 $Comp
 L power1:VCC #PWR016
 U 1 1 5B191D8F
-P 7350 3200
-F 0 "#PWR016" H 7350 3050 50  0001 C CNN
-F 1 "VCC" H 7350 3350 50  0000 C CNN
-F 2 "" H 7350 3200 50  0001 C CNN
-F 3 "" H 7350 3200 50  0001 C CNN
-	1    7350 3200
+P 8400 3200
+F 0 "#PWR016" H 8400 3050 50  0001 C CNN
+F 1 "VCC" H 8400 3350 50  0000 C CNN
+F 2 "" H 8400 3200 50  0001 C CNN
+F 3 "" H 8400 3200 50  0001 C CNN
+	1    8400 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 3300 7350 3300
+	7200 3300 8400 3300
 Wire Wire Line
-	7350 3300 7350 3200
+	8400 3300 8400 3200
 $Comp
 L power1:VCC #PWR017
 U 1 1 5B191DCB
@@ -222,4 +222,43 @@ Wire Wire Line
 	5850 4400 5850 4450
 Wire Wire Line
 	4250 4150 4250 4100
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5BB37DE2
+P 6700 2300
+F 0 "J7" V 6666 2012 50  0000 R CNN
+F 1 "Conn_01x04" V 6575 2012 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6700 2300 50  0001 C CNN
+F 3 "~" H 6700 2300 50  0001 C CNN
+	1    6700 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 3100 6700 3100
+Wire Wire Line
+	6700 3100 6700 2500
+Connection ~ 5800 3100
+Wire Wire Line
+	5900 3000 6600 3000
+Wire Wire Line
+	6600 3000 6600 2500
+Connection ~ 5900 3000
+Wire Wire Line
+	6800 2500 6800 3000
+Wire Wire Line
+	6800 3000 7450 3000
+Wire Wire Line
+	7450 3000 7450 3500
+Connection ~ 7450 3500
+Wire Wire Line
+	7450 3500 8500 3500
+Wire Wire Line
+	7550 3600 7550 2900
+Wire Wire Line
+	7550 2900 6900 2900
+Wire Wire Line
+	6900 2900 6900 2500
+Connection ~ 7550 3600
+Wire Wire Line
+	7550 3600 7200 3600
 $EndSCHEMATC

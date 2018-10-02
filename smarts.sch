@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
-Title ""
-Date ""
-Rev ""
+Title "LED Driver"
+Date "2018-10-02"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -82,7 +82,7 @@ U 1 1 5B1930B8
 P 7500 4250
 F 0 "SW2" H 7550 4450 50  0000 C CNN
 F 1 "Boot SEL" H 7550 4051 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch1.27mm" V 7588 4176 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 7588 4176 50  0001 C CNN
 F 3 "" H 7500 4250 50  0001 C CNN
 	1    7500 4250
 	-1   0    0    1   
