@@ -48,12 +48,12 @@ F 3 "" H 6950 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:D D1
+L leddings-rescue:D-device1 D1
 U 1 1 5B1573F2
 P 6200 3450
 F 0 "D1" H 6200 3550 50  0000 C CNN
 F 1 "D" H 6200 3350 50  0000 C CNN
-F 2 "Diodes_SMD:D_0805" H 6200 3450 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 6200 3450 50  0001 C CNN
 F 3 "" H 6200 3450 50  0001 C CNN
 	1    6200 3450
 	0    -1   -1   0   
@@ -90,9 +90,11 @@ Connection ~ 7850 3700
 Wire Wire Line
 	7850 4550 7850 4100
 $Comp
-L conn1:Barrel_Jack J6
+L leddings-rescue:Barrel_Jack-conn1 J6
 U 1 1 5B1577C1
 P 2550 3450
+AR Path="/5B1577C1" Ref="J6"  Part="1" 
+AR Path="/5B156FC6/5B1577C1" Ref="J6"  Part="1" 
 F 0 "J6" H 2550 3660 50  0000 C CNN
 F 1 "Barrel_Jack" H 2550 3275 50  0000 C CNN
 F 2 "Connectors:Barrel_Jack_CUI_PJ-102AH" H 2600 3410 50  0001 C CNN
@@ -132,18 +134,18 @@ Connection ~ 3000 3550
 Wire Wire Line
 	2850 3350 3150 3350
 $Comp
-L regul1:LM1117-3.3 U1
+L leddings-rescue:LM1117-3.3-regul1 U1
 U 1 1 5B194466
 P 6950 3700
 F 0 "U1" H 6800 3825 50  0000 C CNN
 F 1 "LM1117-3.3" H 6950 3825 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 6950 3700 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 6950 3700 50  0001 C CNN
 F 3 "" H 6950 3700 50  0001 C CNN
 	1    6950 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C C2
+L leddings-rescue:C-device1 C2
 U 1 1 5B157419
 P 7850 3950
 F 0 "C2" H 7875 4050 50  0000 L CNN
@@ -154,7 +156,7 @@ F 3 "" H 7850 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C C1
+L leddings-rescue:C-device1 C1
 U 1 1 5B19450F
 P 6200 3950
 F 0 "C1" H 6225 4050 50  0000 L CNN
@@ -180,7 +182,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 4550 6950 4700
 $Comp
-L mechanical1:Mounting_Hole MK4
+L leddings-rescue:Mounting_Hole-mechanical1 MK4
 U 1 1 5B4FC85C
 P 8850 1650
 F 0 "MK4" H 8950 1696 50  0000 L CNN
@@ -191,7 +193,7 @@ F 3 "" H 8850 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical1:Mounting_Hole MK3
+L leddings-rescue:Mounting_Hole-mechanical1 MK3
 U 1 1 5B4FCD04
 P 8700 1100
 F 0 "MK3" H 8800 1146 50  0000 L CNN
@@ -202,7 +204,7 @@ F 3 "" H 8700 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical1:Mounting_Hole MK2
+L leddings-rescue:Mounting_Hole-mechanical1 MK2
 U 1 1 5B4FCECE
 P 7950 1600
 F 0 "MK2" H 8050 1646 50  0000 L CNN
@@ -213,7 +215,7 @@ F 3 "" H 7950 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical1:Mounting_Hole MK1
+L leddings-rescue:Mounting_Hole-mechanical1 MK1
 U 1 1 5B4FCED4
 P 7800 1050
 F 0 "MK1" H 7900 1096 50  0000 L CNN
@@ -239,7 +241,7 @@ L Device:R R9
 U 1 1 5BB3B508
 P 8850 3950
 F 0 "R9" H 8920 3996 50  0000 L CNN
-F 1 "1K" H 8920 3905 50  0000 L CNN
+F 1 "10K" H 8920 3905 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8780 3950 50  0001 C CNN
 F 3 "~" H 8850 3950 50  0001 C CNN
 	1    8850 3950
